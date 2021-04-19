@@ -1,30 +1,25 @@
 const sqlite3 = require('sqlite3').verbose();
+let db;
 
-// open database in memory
-let db = new sqlite3.Database('db/tweets.db', (err) => {
-  if (err) {
-    return console.error(err.message);
+module.exports = {
+  connectDatabase: function connectDatabase() {
+    // open database in memory
+    db = new sqlite3.Database('db/tweets.db', (err) => {
+      if (err) {
+        return console.error(err.message);
+      }
+      console.log('Connected to the SQlite database.');
+    });
+    return db;
+  },
+  
+  closeDatabaseConnection: function closeDatabaseConnection() {
+    // close the database connection
+    db.close((err) => {
+      if (err) {
+        return console.error(err.message);
+      }
+      console.log('Close the database connection.');
+    });
   }
-  console.log('Connected to the SQlite database.');
-});
-
-// test query
-let sql = `SELECT name FROM users ORDER BY name`;
-
-db.all(sql, [], (err, rows) => {
-  if (err) {
-    throw err;
-  }
-  rows.forEach((row) => {
-    console.log(row.name);
-  });
-});
-
-
-// close the database connection
-db.close((err) => {
-  if (err) {
-    return console.error(err.message);
-  }
-  console.log('Close the database connection.');
-});
+};
