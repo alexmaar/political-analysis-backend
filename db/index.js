@@ -13,6 +13,7 @@ module.exports = {
     return db;
   },
   
+  // tego nie uzywamy, bo laczymy sie z bazą raz na poczatku, i to polączenie jest caly czas
   closeDatabaseConnection: function closeDatabaseConnection() {
     // close the database connection
     db.close((err) => {
