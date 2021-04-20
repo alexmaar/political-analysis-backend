@@ -8,6 +8,7 @@ You can run the system with command:
 ```npm start```
 
 ## Database
+(Folder db) wymagana wersja python 1.6(inne nie sprawdzane)
 Ponieważ nie działało poprawnie zapisywanie do bazy przez twinta oraz pobieranie uzytkowników zrobiłem trochę zmian w plikach twintego.
 
 Instrukcja instalacji twinta:
