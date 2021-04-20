@@ -1,6 +1,6 @@
-from handle_tweets_module.api.twintScripts import *
 from datetime import date
 import datetime
+from db.handle_tweets_module.twintScripts import saveTweetsByHashtag, saveUserByName
 
 
 def saveTweetsByHashtagList(hashtagList, startDate=datetime.datetime(2020, 10, 1), endDate=date.today(), username=None):
@@ -15,6 +15,7 @@ def saveUsers(usersList):
             saveUserByName(userName)
         except Exception as e:
             print(e)
+
 
 def saveTweetsByHashtagListForAllUsers(hashtagList, userList, startDate=datetime.datetime(2020, 10, 1), endDate=date.today()):
     for hashtag in hashtagList:
