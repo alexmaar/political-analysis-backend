@@ -14,6 +14,7 @@ app.get("/api", (req, res) => {
 
 // endpoint /categories - zwraca wszystkie możliwe kategorię
 require('./categories')(app, db);
+require('./tweetsCount')(app, db);
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
