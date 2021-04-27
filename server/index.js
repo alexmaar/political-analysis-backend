@@ -7,6 +7,11 @@ const app = express();
 // connect db
 const db = sqlite.connectDatabase();
 
+// paring body
+app.use(express.urlencoded());
+// Parse JSON bodies (as sent by API clients)
+app.use(express.json());
+
 // test endpoint
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server !"});
@@ -14,6 +19,7 @@ app.get("/api", (req, res) => {
 
 // endpoint /categories - zwraca wszystkie możliwe kategorię
 require('./categories')(app, db);
+require('./staticStatistics')(app, db);
 require('./tweetsCount')(app, db);
 
 app.listen(PORT, () => {
