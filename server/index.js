@@ -8,7 +8,7 @@ const app = express();
 const db = sqlite.connectDatabase();
 
 // paring body
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 
