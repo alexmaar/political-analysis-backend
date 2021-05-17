@@ -21,6 +21,7 @@ app.get("/api", (req, res) => {
 require('./categories')(app, db);
 require('./staticStatistics')(app, db);
 require('./tweetsCount')(app, db);
+require('./wordcloud')(app,db);
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
