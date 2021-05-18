@@ -82,13 +82,13 @@ module.exports = (app, db) => {
 
         switch (attribute) {
           case "tweets":
-            promises.push(dbAllAsPromise("SELECT '" + element +"' as category, COUNT(*) as result, t.date as date  FROM tweets t join users u on u.id = t.user_id WHERE (category='" + element + "' OR political_party='" + element + "' OR supporting_strike=" + supportingStike + ") AND t.date BETWEEN date(\"" + start + "\") AND date(\"" + end + "\") GROUP BY t.date", db));
+            promises.push(dbAllAsPromise("SELECT '" + element + "' as category, COUNT(*) as result, t.date as date  FROM tweets t join users u on u.id = t.user_id WHERE (category='" + element + "' OR political_party='" + element + "' OR supporting_strike=" + supportingStike + ") AND t.date BETWEEN date(\"" + start + "\") AND date(\"" + end + "\") GROUP BY t.date", db));
             break;
           case "likes":
-            promises.push(dbAllAsPromise("SELECT '" + element +"' as category, SUM(t.likes_count) as result, t.date as date  FROM tweets t join users u on u.id = t.user_id WHERE (category='" + element + "' OR political_party='" + element + "' OR supporting_strike=" + supportingStike + ") AND t.date BETWEEN date(\"" + start + "\") AND date(\"" + end + "\") GROUP BY t.date", db));
+            promises.push(dbAllAsPromise("SELECT '" + element + "' as category, SUM(t.likes_count) as result, t.date as date  FROM tweets t join users u on u.id = t.user_id WHERE (category='" + element + "' OR political_party='" + element + "' OR supporting_strike=" + supportingStike + ") AND t.date BETWEEN date(\"" + start + "\") AND date(\"" + end + "\") GROUP BY t.date", db));
             break;
           case "retweets":
-            promises.push(dbAllAsPromise("SELECT '" + element +"' as category, SUM(t.retweets_count) as result, t.date as date  FROM tweets t join users u on u.id = t.user_id WHERE (category='" + element + "' OR political_party='" + element + "' OR supporting_strike=" + supportingStike + ") AND t.date BETWEEN date(\"" + start + "\") AND date(\"" + end + "\") GROUP BY t.date", db));
+            promises.push(dbAllAsPromise("SELECT '" + element + "' as category, SUM(t.retweets_count) as result, t.date as date  FROM tweets t join users u on u.id = t.user_id WHERE (category='" + element + "' OR political_party='" + element + "' OR supporting_strike=" + supportingStike + ") AND t.date BETWEEN date(\"" + start + "\") AND date(\"" + end + "\") GROUP BY t.date", db));
             break;
           default:
             break;
@@ -101,5 +101,44 @@ module.exports = (app, db) => {
     }
     catch (error) { throw error; }
   });
+
+  app.post('/wordcloud', async (req, result) => {
+    try {
+
+      let categories = req.body.categories;
+      let dateRange = req.body.dateRange;
+      let start, end;
+
+      if (dateRange.length !== 2) {
+        start = "2020-11-23";
+        end = "2022-11-23";
+      }
+      else {
+        start = dateRange[0].slice(0, 10);
+        end = dateRange[1].slice(0, 10);
+      }
+
+      let promises = [];
+
+      cat = categories.map(c => {
+        if (c == 'za') {
+          return '1';
+        }
+        else if (c == 'przeciw') {
+          return '0';
+        }
+        else {
+          return c;
+        }
+
+      });
+      const injectedString = cat.map(c => `'${c}'`).join(', ');
+      promises.push(dbAllAsPromise("SELECT t.tweet, t.date as date from tweets as t join users u on u.id = t.user_id WHERE (u.category in (" + injectedString + ") OR u.political_party in (" + injectedString + ") OR u.supporting_strike in (" + injectedString + ")) AND t.date BETWEEN date(\"" + start + "\") AND date(\"" + end + "\")", db))
+
+      let data = await Promise.all(promises);
+      result.send(data[0].map((e) => e.tweet));
+    }
+    catch (error) { throw error; }
+  })
 
 }
