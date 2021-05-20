@@ -1,6 +1,6 @@
 from datetime import date
 import datetime
-from db.handle_tweets_module.twintScripts import saveTweetsByHashtag, saveUserByName
+from twintScripts import saveTweetsByHashtag, saveUserByName
 
 
 def saveTweetsByHashtagList(hashtagList, startDate=datetime.datetime(2020, 10, 1), endDate=date.today(), username=None):
