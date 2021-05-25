@@ -14,23 +14,23 @@ hashtags = ["#przyłębska", "niedlazaostrzeniaustawyaborcyjne", "legalabortion"
             "prawodoaborcji", "razemzkobietami", "drugafala", "NieSkładamyParasolek", "KobietaDecyduje", "Alert4WomensRights"]
 
 users = ["partiarazem", "ZbigniewHoldys", "AgataKowalskaTT", "Anna_Dryjanska", "LukaszKohut", "JacekJaworskiGd", "Aynqa", "Beata__Ka", "pigmalion55", "anita_fogler",
-    "Justysi46819283", "ewollaa", "BDStanley", "BBCKasiaMadera", "amina_you", "nonunadimeno", "dabrowa_k", "SuperNiania", "RobertMaslak", "niedziela_pl", "trzaskowski_", 
-    "GoTracz", "AGajewska", "RobertBiedron", "martalempart", "KSuchanow", "barbaraanowacka", "poselTTrela", "adamSzlapka", "lis_tomasz", "JachiraKlaudia", "K_Smiszek", 
-    "bbudka", "KLubnauer", "GrzegorzBraun_", "KonradBerkowicz", "PremierRP", "JEmilewicz", "mecenasJTK", "MorawieckiM", "DariuszMatecki", "prezydentpl", "KrystPawlowicz", 
-    "__Lewica", "Platforma_org", "strajkkobiet", "WarszawskiSK", "Kom_Obr_Dem", "ObywateleRP", "gazeta_wyborcza", "oko_press", "tvn24", "TygodnikNIE", "Renata_Grochal", 
-    "EMichalik", "patrykmichalski", "sekielski", "KolendaK", "f_sterczewski", "HebanMaja", "kgonciarz", "karolpaciorek", "pisorgpl", "Partia_KORWiN", "KONFEDERACJA_", 
+    "Justysi46819283", "ewollaa", "BDStanley", "BBCKasiaMadera", "amina_you", "nonunadimeno", "dabrowa_k", "SuperNiania", "RobertMaslak", "niedziela_pl", "trzaskowski_",
+    "GoTracz", "AGajewska", "RobertBiedron", "martalempart", "KSuchanow", "barbaraanowacka", "poselTTrela", "adamSzlapka", "lis_tomasz", "JachiraKlaudia", "K_Smiszek",
+    "bbudka", "KLubnauer", "GrzegorzBraun_", "KonradBerkowicz", "PremierRP", "JEmilewicz", "mecenasJTK", "MorawieckiM", "DariuszMatecki", "prezydentpl", "KrystPawlowicz",
+    "__Lewica", "Platforma_org", "strajkkobiet", "WarszawskiSK", "Kom_Obr_Dem", "ObywateleRP", "gazeta_wyborcza", "oko_press", "tvn24", "TygodnikNIE", "Renata_Grochal",
+    "EMichalik", "patrykmichalski", "sekielski", "KolendaK", "f_sterczewski", "HebanMaja", "kgonciarz", "karolpaciorek", "pisorgpl", "Partia_KORWiN", "KONFEDERACJA_",
     "JacekWronaCBS", "OrdoIuris", "tvp_info", "GPCodziennie", "Tygodnik_Sieci", "wPolityce_pl", "WtylewizjiINFO", "michalkarnowski", "wina_Mazurka", "cezarykrysztopa",
     "AKlarenbach", "Janusz1967", "PrawaStronaa", "J_Pospieszalski", "tomaszsamolyk", "Kaja_Godek", "federapl", "MdW_Polska", "Duszpasterstwa", "LadyInB43912586",
     "MAGDALENKA_II", "AlinaPetrowaW", "wdacji", "kacperparol_", "breathingvs", "SUNPIEISM", "kuba_urba", "rybosomek", "bialemieso", "ewefemme", "KaJagiello", "remekle",
     "nienaturalnosc", "thatislisbeth", "hmzagulska", "prfctsykes", "NNiepoprawna", "MarekRutka", "AMFETAMlNA", "lubielizaki", "magdadropek", "_XJulQaX_", "leniwalewaczka",
-    "MiroslawSuchon", "haemad1psa", "FalejMonika", "WaclawJan", "amthreehu", "vanitesfaye", "LukaszKohut", "acczkolwiek", "everyday_loser", "MWielichowska", "SylwiaSpurek", 
-    "Zieloni", "moanrosa", "dallasxsunny", "unaagix", "KLubnauer", "Filmmor_", "fundacjaWoR", "DagmaraPakulska", "dawidmysior", "SylwiaSpurek", "LasekMaciej", "sylvcz", 
+    "MiroslawSuchon", "haemad1psa", "FalejMonika", "WaclawJan", "amthreehu", "vanitesfaye", "LukaszKohut", "acczkolwiek", "everyday_loser", "MWielichowska", "SylwiaSpurek",
+    "Zieloni", "moanrosa", "dallasxsunny", "unaagix", "KLubnauer", "Filmmor_", "fundacjaWoR", "DagmaraPakulska", "dawidmysior", "SylwiaSpurek", "LasekMaciej", "sylvcz",
     "ArturStelmasiak", "kujawiankaa", "MonikaaaBilska", "pawel_senkowski", "MosinskiJan", "RuchNarodowy", "IsakowiczZalesk", "RadioMaryja", "wolfstarnette", "jadespurpose",
     "matitoidiota", "perfectly_wr0ng", "TDFeV", "danutahuebner", "krytyka", "Ula_Zielinska", "hoeyannie", "szejnfeld", "M_Prokop_P", "luvmylittlelou", "KUeberhan",
     "_dimelaverdad", "dgpopiolek", "helenajaneczek", "B_Maciejewska", "GabrielaMorStan", "K_Mieszkowski", "delarabur", "SuwerenaPL", "ColombeCS", "propeertys", "m_gdula",
     "OloCzarny", "klimasara_j", "mlodalewica_", "KPH_official", "LukaszukAB", "wiosnabiedronia", "WandaNowicka", "Luearity", "JoankaSW", "TheProgressives", "RobertBiedron",
-    "PiotrZiba11", "ObazRobert2", "kingamierzynska", "WKarpieszuk", "aneta_moscicka", "EuropaJens", "Maciejevvski", "eirigi1916", "nahmafia", "Norberto_BCN", 
-    "socjalistyczna", "fideista", "kreconefrytki", "KamilRochucki", "louieawx", "PortalWroclawpl", "rebecaflor", "pieprzmnieed", "WiolaKaminskaPL", "Pawlowska_pl", 
+    "PiotrZiba11", "ObazRobert2", "kingamierzynska", "WKarpieszuk", "aneta_moscicka", "EuropaJens", "Maciejevvski", "eirigi1916", "nahmafia", "Norberto_BCN",
+    "socjalistyczna", "fideista", "kreconefrytki", "KamilRochucki", "louieawx", "PortalWroclawpl", "rebecaflor", "pieprzmnieed", "WiolaKaminskaPL", "Pawlowska_pl",
     "piotr_borys", "JakubWu", "AnitaKDZG", "johnpaul_newman", "DemStory", "psycholog_pisze", "S_Potapowicz", "bozenalisowska", "MarekSzolc", "UGMediaLtd", "keram_iksmodar",
     "kissymoonchild", "dudumfan", "PrazonaCebula", "Albert301271", "SaaraHyrkko", "kirkyamakadin", "brightonanti", "ovvlsome", "JakubRoskosz", "LewicowyHub",
     "volnoscioviec", "JakubMedek", "madziamf", "KsymenaMatysek", "idzpodpradpl", "Evelyn_Regner", "samiraraf", "BartekPiekarski", "elukacijewska", "RFSU", "24tp_pl", "BZdrojewska",
@@ -66,7 +66,7 @@ users = ["partiarazem", "ZbigniewHoldys", "AgataKowalskaTT", "Anna_Dryjanska", "
 startDate = datetime.datetime(2020,10,1)
 endDate = date.today()
 # saveTweetsByHashtagList(hashtags, startDate, endDate)
-saveTweetsByHashtagListForAllUsers(hashtags, users)  # zapisuje tweety tylko wybranych uzytkownikow
+saveTweetsByHashtagListForAllUsers([hashtags[7 DONE]], users)  # zapisuje tweety tylko wybranych uzytkownikow
 
 # saving users:
 #saveUsers(users)
