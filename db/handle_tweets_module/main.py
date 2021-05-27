@@ -52,7 +52,7 @@ users = ["partiarazem", "ZbigniewHoldys", "AgataKowalskaTT", "Anna_Dryjanska", "
     "Wyborcza_Krakow", "WojciechKorkuc", "Autonomie_Mag", "PoderPopularWeb", "Romanczuk_Anna", "KonradPogoda", "jflibicki", "jola_mor", "K_Galecka", "matt_magdziarz", "Droomer_NL",
     "motostork", "MartaHabior", "asta_fish", "K_Izdebski", "emocjewsieci", "punkboyinsf", "patrykchilewicz", "malyy5", "a_hrechorowicz", "Polityka_wSieci" , "IratxeGarper", "Another_Europe",
     "MEugeniaRPalop", "Diablica_Zwinna", "mmzawisza", "RBakiewicz", "fdpbt", "polskieradiopl", "rafalhubert", "nowePSL", "StollmeyerEU", "Parlimag", "PolskieRadio24", "sjkaleta", "FAKT24PL",
-    "GreenpeaceEU", "TerryReintke", "RadioZET_NEWS", "RepublikaTV", "TomaszSakiewicz", "bweglarczyk", "humanite_fr", "euronews", "janinadailyblog", "6GhosT9", "JanMencwel", "Colmogorman"] 
+    "GreenpeaceEU", "TerryReintke", "RadioZET_NEWS", "RepublikaTV", "TomaszSakiewicz", "bweglarczyk", "humanite_fr", "euronews", "janinadailyblog", "6GhosT9", "Colmogorman"]
 
 # connect to our db:
 # connection = sqlite3.connect('../tweets.db')
@@ -66,7 +66,7 @@ users = ["partiarazem", "ZbigniewHoldys", "AgataKowalskaTT", "Anna_Dryjanska", "
 startDate = datetime.datetime(2020,10,1)
 endDate = date.today()
 # saveTweetsByHashtagList(hashtags, startDate, endDate)
-saveTweetsByHashtagListForAllUsers([hashtags[14 done]], users)  # zapisuje tweety tylko wybranych uzytkownikow
+saveTweetsByHashtagListForAllUsers([hashtags[29 done]], users)  # zapisuje tweety tylko wybranych uzytkownikow
 
 # saving users:
 #saveUsers(users)
