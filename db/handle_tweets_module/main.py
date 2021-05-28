@@ -65,8 +65,9 @@ users = ["partiarazem", "ZbigniewHoldys", "AgataKowalskaTT", "Anna_Dryjanska", "
 # saving tweets:
 startDate = datetime.datetime(2020,10,1)
 endDate = date.today()
+print(len(hashtags))
 # saveTweetsByHashtagList(hashtags, startDate, endDate)
-saveTweetsByHashtagListForAllUsers([hashtags[29 done]], users)  # zapisuje tweety tylko wybranych uzytkownikow
+saveTweetsByHashtagListForAllUsers([hashtags[38]], users)  # zapisuje tweety tylko wybranych uzytkownikow
 
 # saving users:
 #saveUsers(users)
